@@ -5,16 +5,26 @@ import Square from '../Square';
 import './Board.css';
 
 
-interface BoardProps {
-  numRows: number;
-  numCols: number;
-}
+// interface BoardProps {
+//   numRows: number;
+//   numCols: number;
+// }
 
-const Board: React.FC<BoardProps> = ({ numRows, numCols }) => {
+// const Board: React.FC<BoardProps> = ({ numRows, numCols }) => {
+//   const [Board, setBoard] = useState<Array<Array<string | null>>>([]);
+//   const [currentPlayer, setCurrentPlayer] = useState<'red' | 'yellow'>('red');
+//   const [winner, setWinner] = useState<string | null>(null);
+  
+
+interface BoardProps {}
+
+const Board: React.FC<BoardProps> = () => {
+  const numRows = 6;
+  const numCols = 7;
+
   const [Board, setBoard] = useState<Array<Array<string | null>>>([]);
   const [currentPlayer, setCurrentPlayer] = useState<'red' | 'yellow'>('red');
   const [winner, setWinner] = useState<string | null>(null);
-  
 //garantisce che initializeBoard venga chiamato solo una volta,
 // all'inizio del rendering del componente.
   useEffect(() => {

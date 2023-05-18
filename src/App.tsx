@@ -9,7 +9,9 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <h1>Force Four</h1>
-      <Board numRows={6} numCols={7} />
+      {/* <Board numRows={6} numCols={7} /> */}
+      <Board  />
+
     </div>
   );
 };
