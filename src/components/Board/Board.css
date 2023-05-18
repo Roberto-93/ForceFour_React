@@ -1,0 +1,75 @@
+/* Board.css */
+.Board{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+ 
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+ 
+.square {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid blue;
+  background-color: white;
+}
+ 
+.red-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.yellow-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+ 
+.winner {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: orange;
+}
+
+.current-player-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px ;
+}
+.reset-button{
+  width: 100px;
+  height: 35px;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: transparent;
+
+}
+.reset-button:hover{
+  color: white;
+  border: 1px solid white;
+  background-color: blue;
+}
+
+
+
+
+
+
+
+ 
+ 
